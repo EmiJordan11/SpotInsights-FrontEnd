@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url(../fonts/Gotham\ Medium.otf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  background-color: #121212;
+  font-family: 'Gotham';
+  color: white;
+  margin: 0px 30px;
+}

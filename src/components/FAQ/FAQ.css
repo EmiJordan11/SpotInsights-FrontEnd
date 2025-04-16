@@ -1,0 +1,34 @@
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    width: 70vw;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.question:hover{
+    background-color: #242424;
+}
+
+.question__selected {
+    background-color: #242424;
+}
+
+.question__icon {
+    transition: transform 0.5s ease;
+    font-size: 36px;
+}
+
+.question__icon-open{
+    transform: scaleY(-1);
+} 
+
+
+.answer{
+    width: 70vw;
+    padding: 18px 10px;
+    background-color: #1f1f1f;
+    font-size: 14px;
+}
