@@ -19,7 +19,7 @@ function App() {
       </main>
 
       <section className="info">
-        <h2>¿Por qué conectar tu cuenta? / ¿Qué hace esta app?</h2>
+        <h2>¿Por qué conectar tu cuenta?</h2>
         <div className="info__cards">
           {cardData.map((card, i) => (
             <InfoCard key={i} icon={card.icon} title={card.title} info={card.info} />
