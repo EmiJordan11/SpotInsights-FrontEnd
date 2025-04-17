@@ -1,0 +1,21 @@
+.footer {
+    background-color: black;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__info-logo {
+    width: 180px;
+}
+
+.footer__contact-links{
+    display: flex;
+    gap: 15px;
+}
+
+
+.contact-icon {
+    font-size: 34px;
+}
