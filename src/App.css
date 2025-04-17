@@ -1,30 +1,16 @@
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.header__logo{
-  width: 250px;
-}
-
-.header__nav{
-  display: flex;
-  gap: 15px;
-  list-style: none;
-}
-
-.logo-spoty {
-  color: white;
-}
 
 .main {
-  margin: 15vh 0%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 30px;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #121212 0%, #08AEEA 100%);
+
 }
 
 .main__welcome {
