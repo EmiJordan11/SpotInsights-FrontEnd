@@ -1,8 +1,7 @@
 
 .info__card__inner {
     background-color: #08AEEA;
-background-image: linear-gradient(0deg, #08AEEA 0%, #18d860 100%);
-
+    background-image: linear-gradient(0deg, #08AEEA 0%, #18d860 100%);
     border: none;
     border-radius: 15px;
     width: 250px;
@@ -12,12 +11,23 @@ background-image: linear-gradient(0deg, #08AEEA 0%, #18d860 100%);
     transform-style: preserve-3d;
     display: flex;
     color: black;
+    cursor: pointer;
 }
 
-.info__card__inner:hover{
+/* al hacer hover: agrandarlo cuando no tenga la clase flip*/
+.info__card__inner:hover:not(.flip) {
+    transform: scale(1.1);
+}
+
+/* al hacer click girar */
+.flip{
     transform: rotateY(180deg);
 }
 
+/* al hacer click, lo rota y lo agranda, si ya esta rotado, solo lo agranda */
+.flip:hover{
+    transform: rotateY(180deg) scale(1.1) ;
+}
 
 .front__card, .back__card{
     -webkit-backface-visibility: hidden;
@@ -44,8 +54,6 @@ background-image: linear-gradient(0deg, #08AEEA 0%, #18d860 100%);
 .back__card-text{
     padding: 10px;
 }
-
-
 
 
 .front__card-icon {

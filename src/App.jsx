@@ -12,11 +12,18 @@ function App() {
     <>
       <Header />
       <main className='main'>
-        <h1 className='main__welcome'>Bienvenido a SpotInsights</h1>
-        <button className='main__button'> 
-          <FaSpotify className='main__button-icon' />
-          Iniciar sesión con Spotify
-        </button>
+        <div className='main__text'> 
+          <h1 className='main__text-title'>Bienvenido a SpotInsights</h1>
+          <h2 className='main__text-subtitle'> Sumate al análisis colectivo de hábitos musicales en Spotify.
+          Conectá tu cuenta y ayudanos a descubrir cómo escucha música la comunidad.</h2>
+          <button className='main__text-button'> 
+            <FaSpotify className='main__text-button-icon' />
+            Iniciar sesión con Spotify
+          </button>
+        </div> 
+        <div className='main__img'>
+          <img src="../public/SpotInsights-post.png" alt="" />
+        </div>
       </main>
 
       <section className="info">

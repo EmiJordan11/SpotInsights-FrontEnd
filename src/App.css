@@ -1,10 +1,8 @@
 
-
-
 .main {
-  height: 80vh;
+  height: 85vh;
+  padding: 0px 18vw;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
@@ -13,15 +11,41 @@
 
 }
 
-.main__welcome {
+
+/* .main {
+  height: 85vh;
+  padding: 0px 18vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #121212 0%, #08AEEA 100%);
+
+} */
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main__text-title {
   font-size: 48px;
 }
 
-.main__button {
+.main__text-subtitle {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.main__text-button {
   display: flex;
   gap: 10px;
   align-items: center;
   background-color: #18d860;
+  width: max-content;
   font-family: 'Gotham';
   font-size: 20px;
   color: white;
@@ -29,16 +53,30 @@
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  transition: 0.4s ease;
 }
 
-.main__button-icon{
+.main__text-button-icon{
   font-size: 32px;
 }
 
-.main__button:hover {
+.main__text-button:hover {
   background-color: white;
   color: black;
+  transform: scale(1.1);
 }
+
+.main__img img {
+  width: 250px;
+  transition: transform 0.4s ease;
+}
+
+.main__img img:hover {
+  transform: scale(1.1);
+}
+
+
+
 
 /* info */
 
