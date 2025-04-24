@@ -5,14 +5,17 @@ import { SiLinkedin } from "react-icons/si";
 export const contactData = [ 
     {
         icon: FaGithub,
-        name: 'GitHub'
+        name: 'GitHub',
+        link: 'https://github.com/EmiJordan11'
     },
     {
         icon: IoIosMail,
-        name: 'Mail'
+        name: 'Mail',
+        link: 'mailto:emiliano.e.jordan@gmail.com'
     },
     {
         icon: SiLinkedin,
-        name: 'LinkedIn'
+        name: 'LinkedIn',
+        link: 'https://www.linkedin.com/in/emiliano-jordan/'
     },
 ]

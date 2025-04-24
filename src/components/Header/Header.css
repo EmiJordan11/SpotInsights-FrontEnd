@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  padding: 0px 35px;
+  padding: 0px 12vw;
 }
 
 .header__logo{
@@ -15,4 +15,13 @@
   display: flex;
   gap: 15px;
   list-style: none;
+}
+
+.header__nav-item a{
+  text-decoration: none;
+  color: #FFFF;
+}
+
+.header__nav-item a:hover{
+  color: #18d860;
 }

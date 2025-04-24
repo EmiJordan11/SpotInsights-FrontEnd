@@ -10,7 +10,7 @@ import { Footer } from './components/Footer/Footer';
 function App() {
   return (
     <>
-      <Header />
+      <Header id='inicio'/>
       <main className='main'>
         <div className='main__text'> 
           <h1 className='main__text-title'>Bienvenido a SpotInsights</h1>
@@ -26,7 +26,7 @@ function App() {
         </div>
       </main>
 
-      <section className="info">
+      <section className="info" id='por-que-conectar'>
         <h2>¿Por qué conectar tu cuenta?</h2>
         <div className="info__cards">
           {cardData.map((card, i) => (
@@ -37,7 +37,7 @@ function App() {
 
 
 
-      <section className="faqs">
+      <section className="faqs" id='faqs'>
         <h2 className='faqs__title'>¿Tenés preguntas?</h2>
         {faqData.map((faq,i) => (
           <FAQ key={i} question={faq.question} answer={faq.answer} />

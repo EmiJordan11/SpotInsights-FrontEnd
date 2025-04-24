@@ -5,11 +5,13 @@
     padding: 15px 10px;
     width: 70vw;
     font-size: 20px;
+    font-weight: normal;
     cursor: pointer;
 }
 
 .question:hover{
     background-color: #242424;
+    text-decoration: underline;
 }
 
 .question__selected {
