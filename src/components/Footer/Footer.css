@@ -10,7 +10,7 @@
 .footer__info-faded {
     margin-top: 5px;
     color: #919496;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .footer__info-logo {
@@ -26,7 +26,7 @@
 
 
 .footer__contact-title{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .footer__contact-links{
@@ -37,6 +37,6 @@
 
 
 .contact-icon {
-    font-size: 34px;
+    font-size: 2.125rem;
     color: #FFFF;
 }
