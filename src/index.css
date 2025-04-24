@@ -12,4 +12,5 @@
   background-color: #121212;
   font-family: 'Gotham';
   color: white;
+  scroll-behavior: smooth;
 }

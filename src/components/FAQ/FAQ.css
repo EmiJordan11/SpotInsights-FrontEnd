@@ -34,3 +34,19 @@
     background-color: #1f1f1f;
     font-size: 0.875rem;
 }
+
+/* ------------------------ MEDIA QUERIES ------------------------*/
+/* TELEFONOS grandes (hasta 767px)*/
+
+@media (max-width: 767px) {
+
+    .question{
+        font-size: 1rem;
+        width: 95vw;
+    }
+
+    .answer{
+        width: 95vw;
+        font-size: 0.75rem;
+    }
+}

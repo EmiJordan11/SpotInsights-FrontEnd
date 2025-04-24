@@ -1,6 +1,6 @@
 .footer {
     background-color: black;
-    padding: 30px 12vw;
+    padding: 30px 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,4 +39,29 @@
 .contact-icon {
     font-size: 2.125rem;
     color: #FFFF;
+}
+
+
+/* ------------------------ MEDIA QUERIES ------------------------*/
+
+/* TABLETS (Horizontal 1024px - 1279px) */
+
+@media (max-width: 1279px) {
+    .footer {
+      padding: 15px 3vw;
+    }
+}
+
+/* Dimension especial (hasta 549px) */
+
+@media (max-width: 549px) {
+    .footer{
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+    }
+
+    .footer__contact{
+        align-items: start;
+    }
 }
