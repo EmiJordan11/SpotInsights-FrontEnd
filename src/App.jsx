@@ -8,6 +8,13 @@ import { cardData } from './components/InfoCard/cardData';
 import { Footer } from './components/Footer/Footer';
 
 function App() {
+
+  const spotify_url = import.meta.env.VITE_URL_SPOTIFY;
+
+  const login = () => {
+    window.location.href = spotify_url
+  }
+
   return (
     <>
       <Header id='inicio'/>
@@ -16,7 +23,7 @@ function App() {
           <h1 className='main__text-title'>Bienvenido a SpotInsights</h1>
           <h2 className='main__text-subtitle'> Sumate al análisis colectivo de hábitos musicales en Spotify.
           Conectá tu cuenta y ayudanos a descubrir cómo escucha música la comunidad.</h2>
-          <button className='main__text-button'> 
+          <button className='main__text-button' onClick={login}> 
             <FaSpotify className='main__text-button-icon' />
             Iniciar sesión con Spotify
           </button>

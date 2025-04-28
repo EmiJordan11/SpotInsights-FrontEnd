@@ -10,12 +10,13 @@
 }
 
 .question:hover{
-    background-color: #242424;
+    background-color: #2A2A2A;
     text-decoration: underline;
 }
 
 .question__selected {
-    background-color: #242424;
+    background-color: #2A2A2A;
+    text-decoration: underline;
 }
 
 .question__icon {
