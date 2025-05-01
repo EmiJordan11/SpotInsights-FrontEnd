@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <footer className="footer" id='contacto'>
             <div className="footer__info">
-                <img src="../../public/logo-spotinsights.png" alt="Logo SpotInsights" className='footer__info-logo'/>
+                <img src="/Logo-spotinsights.png" alt="Logo SpotInsights" className='footer__info-logo'/>
                 <p>© 2025 | Proyecto desarrollado por Emiliano Jordan </p>
                 <p className='footer__info-faded'>Datos obtenidos mediante la API oficial de Spotify</p>
                 <p className='footer__info-faded'>Proyecto realizado solo con fines educativos</p>

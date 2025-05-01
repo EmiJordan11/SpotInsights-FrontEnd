@@ -2,8 +2,14 @@ import { useState } from 'react'
 import './Header.css'
 import { IoMenu } from "react-icons/io5"
 import { RxCross2 } from "react-icons/rx";
+import { Navigate, useNavigate } from 'react-router-dom';
 
 export const Header = () => {
+    const navigate = useNavigate()
+
+    const handleClickLogo = () => {
+        navigate('/')
+    }
 
     const menuIcon = {
         burguer: IoMenu,
@@ -17,7 +23,7 @@ export const Header = () => {
 
     return (
         <header className="header">
-            <img src="../public/logo-spotinsights.png" alt="Logo SpotInsights" className="header__logo" />
+            <img src="/Logo-spotinsights.png" alt="Logo SpotInsights" className="header__logo" onClick={handleClickLogo} />
 
             <nav>
                 <ul className={classNameNavBar}>

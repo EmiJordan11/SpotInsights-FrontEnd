@@ -4,12 +4,35 @@ import confetti from "canvas-confetti"
 import { Footer } from "../components/Footer/Footer"
 import { faqData } from "../components/FAQ/faqData"
 import { FAQ } from "../components/FAQ/FAQ"
+import { sendAuthorizationCode } from "../services/DataSyncService"
+import { useNavigate } from "react-router-dom"
 
 export const DashboardPage = () => {
 
+    const navigate = useNavigate()
+
     useEffect (()=> {
-        confetti()
-    })
+        const authorize = async()=> {
+            const code = new URLSearchParams(window.location.search).get("code");
+            if (code) {
+                try{
+                    confetti()
+                    const response = await sendAuthorizationCode(code);
+                    if (response.status==200) {
+                        console.log("Autorizacion exitosa")
+                    }
+                    else{
+                        console.log("Hubo un error al autorizar")
+                    }
+                } catch (error){
+                    console.error("Error al enviar el code: ", error)
+                }
+            } else{
+                navigate('/')
+            }
+        }
+        authorize()
+    }, [])
 
     return (
         <>

@@ -9,6 +9,7 @@
 
 .header__logo{
   width: 250px;
+  cursor: pointer;
 }
 
 .header__nav{

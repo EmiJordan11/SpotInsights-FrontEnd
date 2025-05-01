@@ -12,6 +12,7 @@ export const HomePage = () => {
     const login = () => {
         window.location.href = spotify_url
     }
+
     return (
         <>
             <Header id='inicio'/>
@@ -26,7 +27,7 @@ export const HomePage = () => {
                 </button>
                 </div> 
                 <div className='main__img'>
-                <img src="../public/SpotInsights-post.png" alt="" />
+                <img src="/SpotInsights-post.png" alt="" />
                 </div>
             </main>
 
