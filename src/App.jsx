@@ -1,23 +1,19 @@
 import './App.css'
-import { Header } from './components/Header/Header'
-import { FaSpotify } from "react-icons/fa";
-import { InfoCard } from './components/InfoCard/InfoCard';
-import { FAQ } from './components/FAQ/FAQ';
-import { faqData } from './components/FAQ/faqData';
-import { cardData } from './components/InfoCard/cardData';
-import { Footer } from './components/Footer/Footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HomePage } from './pages/HomePage';
+import { DashboardPage } from './pages/DashboardPage';
 
 function App() {
-
-  const spotify_url = import.meta.env.VITE_URL_SPOTIFY;
-
-  const login = () => {
-    window.location.href = spotify_url
-  }
-
   return (
     <>
-      <Header id='inicio'/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/dashboard' element={<DashboardPage />} />
+          <Route path="*" element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
+      {/* <Header id='inicio'/>
       <main className='main'>
         <div className='main__text'> 
           <h1 className='main__text-title'>Bienvenido a SpotInsights</h1>
@@ -51,7 +47,7 @@ function App() {
         ))}
        
       </section>
-      <Footer />
+      <Footer /> */}
     </>
   )
 }
