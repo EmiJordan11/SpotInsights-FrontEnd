@@ -6,6 +6,8 @@ import { faqData } from "../components/FAQ/faqData"
 import { FAQ } from "../components/FAQ/FAQ"
 import { sendAuthorizationCode } from "../services/DataSyncService"
 import { useNavigate } from "react-router-dom"
+import React from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export const DashboardPage = () => {
 
@@ -16,10 +18,19 @@ export const DashboardPage = () => {
             const code = new URLSearchParams(window.location.search).get("code");
             if (code) {
                 try{
-                    confetti()
+                    confetti({
+                        origin:{
+                            x:0.25,
+                        }
+                    })
+                    confetti({
+                        origin:{
+                            x:0.75,
+                        }
+                    })
                     const response = await sendAuthorizationCode(code);
-                    if (response.status==200) {
-                        console.log("Autorizacion exitosa")
+                    if (response.status==204) {
+                        console.log("Autorización exitosa")
                     }
                     else{
                         console.log("Hubo un error al autorizar")
@@ -40,11 +51,16 @@ export const DashboardPage = () => {
             <main className='main'>
                 <div className='main__text'> 
                     <h1 className='main__text-title'>¡Ya sos parte de SpotInsights!</h1>
-                    <h2 className='main__text-subtitle'>Gracias por conectarte, Hemos registrado tu historial reciente de Spotify para contribuir al análisis colectivo. Próximamente podrás ver los resultados en nuestro dashboard de Power BI.</h2>
+                    <h2 className='main__text-subtitle'>Gracias por conectarte, hemos registrado tu historial reciente de Spotify para contribuir al análisis colectivo. Próximamente podrás ver los resultados en nuestro dashboard de Power BI.</h2>
                 </div> 
-                <div className='main__img'>
-                    <img src="../public/SpotInsights-post.png" alt="" />
-                </div>
+                <DotLottieReact
+      src="https://lottie.host/d111e6e2-7df4-4eb7-97c4-f4a51c7d9340/Hp7KyAxbDN.lottie"
+      loop
+      autoplay
+    />
+                {/* <div className='main__img'>
+                    <img src="/SpotInsights-post.png" alt="" />
+                </div> */}
             </main>
 
             <section className="faqs" id='faqs'>

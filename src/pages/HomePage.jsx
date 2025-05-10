@@ -5,6 +5,7 @@ import { FAQ } from '../components/FAQ/FAQ';
 import { faqData } from '../components/FAQ/faqData';
 import { cardData } from '../components/InfoCard/cardData';
 import { Footer } from '../components/Footer/Footer';
+import './HomePage.css'
 
 export const HomePage = () => {
     const spotify_url = import.meta.env.VITE_URL_SPOTIFY;

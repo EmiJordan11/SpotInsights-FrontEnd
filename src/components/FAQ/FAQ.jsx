@@ -22,7 +22,7 @@ export const FAQ = ({question, answer}) => {
 
 const Answer = ({children}) => {
     return (
-        <div className="answer">
+        <div className="answer" style={{ whiteSpace: 'pre-line' }}>
             <p>{children}</p>
         </div>
     )
