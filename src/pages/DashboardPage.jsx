@@ -8,6 +8,7 @@ import { sendAuthorizationCode } from "../services/DataSyncService"
 import { useNavigate } from "react-router-dom"
 import React from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import styles from './DashboardPage.module.css'
 
 export const DashboardPage = () => {
 
@@ -48,23 +49,21 @@ export const DashboardPage = () => {
     return (
         <>
             <Header/>
-            <main className='main'>
-                <div className='main__text'> 
-                    <h1 className='main__text-title'>¡Ya sos parte de SpotInsights!</h1>
-                    <h2 className='main__text-subtitle'>Gracias por conectarte, hemos registrado tu historial reciente de Spotify para contribuir al análisis colectivo. Próximamente podrás ver los resultados en nuestro dashboard de Power BI.</h2>
+            <main className={styles["main"]}>
+                <div className={styles["main__text"]} /*style={{ position: 'relative', zIndex: 2 }}*/> 
+                    <h1 className={styles["main__text-title"]}>¡Ya sos parte de SpotInsights!</h1>
+                    <h2 className={styles["main__text-subtitle"]}>Gracias por conectarte, hemos registrado tu historial reciente de Spotify para contribuir al análisis colectivo. Próximamente podrás ver los resultados en nuestro dashboard de Power BI.</h2>
                 </div> 
                 <DotLottieReact
-      src="https://lottie.host/d111e6e2-7df4-4eb7-97c4-f4a51c7d9340/Hp7KyAxbDN.lottie"
-      loop
-      autoplay
-    />
-                {/* <div className='main__img'>
-                    <img src="/SpotInsights-post.png" alt="" />
-                </div> */}
+                    src="https://lottie.host/d111e6e2-7df4-4eb7-97c4-f4a51c7d9340/Hp7KyAxbDN.lottie"
+                    loop
+                    autoplay
+                    className={styles["main__lottie"]}
+                />
             </main>
 
-            <section className="faqs" id='faqs'>
-                <h2 className='faqs__title'>¿Tenés preguntas?</h2>
+            <section className={styles["faqs"]} id='faqs'>
+                <h2 className={styles["faqs__title"]}>¿Tenés preguntas?</h2>
                 {faqData.map((faq,i) => (
                 <FAQ key={i} question={faq.question} answer={faq.answer} />
                 ))}

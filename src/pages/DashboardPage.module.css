@@ -1,0 +1,140 @@
+.main {
+    height: 75vh;
+    padding: 0px 14vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-image: linear-gradient(to top, #121212 0%, #6e45e2 100%);
+}
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main__text-title {
+    font-size: 3rem;
+    white-space: nowrap;
+}
+
+.main__text-subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    width: 80%;
+}
+
+.main__lottie{
+    height: 600px;
+    width: 1060px;
+}
+
+/* FAQs */
+
+.faqs {
+    margin: 55px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqs__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.875rem;
+}
+
+/* ------------------------ MEDIA QUERIES ------------------------*/
+
+/* MONITORES GRANDES (<=1700px) */
+@media (min-width: 1700px){
+
+    .main__text-title{
+        font-size: 4rem;
+    }
+
+    .main__text-subtitle{
+        font-size: 2rem;
+    }
+
+    .main__lottie{
+        height: 60vh;
+    }
+}
+
+/* TABLETS (Horizontal 1024px - 1279px) */
+
+@media (max-width: 1279px) {
+
+    .main__text-title {
+        white-space: wrap;
+    }
+
+    .main__text-subtitle {
+        width: 100%;
+    }
+
+    /* .main__lottie{
+        height: 600px;
+        width: 1060px;
+    } */
+}
+
+/* TABLETS (Vertical 768px - 1023px) */
+
+@media (max-width: 1023px) {
+
+    .main {
+        padding: 0px 10vw;
+    }
+
+    .main__text-title {
+        white-space: normal;
+    }
+
+}
+
+/* TELEFONOS grandes (481px - 767px)*/
+
+@media (max-width: 767px) {
+
+    /* .main{
+        text-align: center;
+    } */
+
+    .main__lottie {
+        display: none;
+    }
+
+    .main__text {
+        align-items: center;
+    }
+
+    .main__text-title,
+    .main__text-subtitle {
+        text-align: center;
+    }
+
+}
+
+/* TELEFONOS medianos (418px - 480px)*/
+/* Se adapta bien a los estilos anteriores */
+
+/* TELEFONOS pequeños (hasta 417px)*/
+@media (max-width: 417px) {
+    .main{
+        height: 65vh;
+    }
+    .main__text-title {
+        font-size: 2.5rem;
+    }
+
+    .main__text-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .faqs__title {
+        font-size: 1.5rem;
+    }
+}
