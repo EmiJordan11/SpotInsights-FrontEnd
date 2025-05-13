@@ -10,7 +10,9 @@
 4. [🖼️ Secciones del sitio](#️-secciones-del-sitio)
 5. [🔒 Seguridad](#-seguridad)
 6. [🛠️ Tecnologías utilizadas](#️-tecnologías-utilizadas)
+7. [🧑‍💻 Autoría y propiedad intelectual](#️-autoría-y-propiedad-intelectual)
 
+---
 ## 🎧 ¿Qué es SpotInsights?
 
 **SpotInsights** es un proyecto que integra el Desarrollo FullStack con el Análisis de Datos. Su objetivo principal es recopilar y analizar los datos de reproducción musical de los usuarios a través de la API de Spotify.
@@ -80,3 +82,13 @@ La aplicación ha sido desplegada en Vercel.
 - **Vercel** para despliegue
 
 ---
+## 🧑‍💻 Autoría y propiedad intelectual
+**SpotInsights** es un proyecto personal desarrollado de manera integral por Emiliano Jordan.
+
+Todo el diseño, desarrollo frontend y backend, análisis de datos, visualizaciones, así como los elementos gráficos (como el logo), han sido ideados y construidos por el autor.
+
+Este repositorio forma parte de una iniciativa profesional orientada a demostrar habilidades en Desarrollo FullStack y Análisis de Datos.
+
+Todos los derechos reservados © 2025 Emiliano Jordan.
+
+Este proyecto no está afiliado ni respaldado por Spotify.
