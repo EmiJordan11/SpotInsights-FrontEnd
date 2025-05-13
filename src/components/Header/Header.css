@@ -48,16 +48,12 @@
 
   .header {
     padding: 0px 1vw;
-    height: auto;
+    height: 66px;
   }
 }
   
 /* TELEFONOS grandes (481px - 767px)*/
 @media (max-width: 767px) {
-
-  .header{
-    height: auto;
-  } 
   
   .header__nav {
     flex-direction: column;
@@ -78,14 +74,12 @@
   .header__nav{
     display: none;
     position: absolute;
-    top: 7vh;
+    top: 66px;
     left: 0;
     padding: 0px 10px 10px;
     background-color: #121212;
     width: 100vw;
     cursor: pointer;
-    /* transform: translateX(750px);
-    transition: transform 0.5s ease; */
   }
 
   .header__nav-item{

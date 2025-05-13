@@ -1,183 +1,183 @@
 
 .main {
-    height: 80vh;
-    padding: 0px 16vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    background-image: linear-gradient(0deg, #121212 0%, #08AEEA 100%);
-  }
-  
-  .main__text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .main__text-title {
-    font-size: 3rem;
-    white-space: nowrap;
-  }
-  
+  height: 80vh;
+  padding: 0px 16vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-image: linear-gradient(0deg, #121212 0%, #08AEEA 100%);
+}
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main__text-title {
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.main__text-subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  width: 80%;
+}
+
+.main__text-button {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: #18d860;
+  width: max-content;
+  font-family: 'Gotham';
+  font-size: 1.125rem;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.main__text-button-icon {
+  font-size: 2rem;
+}
+
+.main__text-button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.main__img img {
+  width: 250px;
+  transition: transform 0.4s ease;
+}
+
+.main__img img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+/* info */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.info h2 {
+  margin-top: 30px;
+  font-size: 1.875rem;
+}
+
+.info__cards {
+  display: flex;
+  gap: 45px;
+}
+
+/* FAQs */
+
+.faqs {
+  margin: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqs__title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.875rem;
+}
+
+/* ------------------------ MEDIA QUERIES ------------------------*/
+
+/* TABLETS (Horizontal 1024px - 1279px) */
+
+@media (max-width: 1279px) {
+
   .main__text-subtitle {
-    font-size: 1rem;
-    font-weight: normal;
-    width: 80%;
+    width: 100%;
   }
-  
+}
+
+/* TABLETS (Vertical 768px - 1023px) */
+
+@media (max-width: 1023px) {
+
+  .main {
+    padding: 0px 4vw;
+  }
+
+  .main__text-title {
+    white-space: normal;
+  }
+
+  .info__cards {
+    flex-direction: column;
+  }
+}
+
+/* TELEFONOS grandes (481px - 767px)*/
+
+@media (max-width: 767px) {
+
+  .main__img {
+    display: none;
+  }
+
+  .main__text {
+    align-items: center;
+  }
+
+  .main__text-title,
+  .main__text-subtitle {
+    text-align: center;
+  }
+
+}
+
+/* TELEFONOS medianos (418px - 480px)*/
+/* Se adapta bien a los estilos anteriores */
+
+/* TELEFONOS pequeños (hasta 417px)*/
+@media (max-width: 417px) {
+  .main__text-title {
+    font-size: 2.5rem;
+  }
+
+  .main__text-subtitle {
+    font-size: 0.75rem;
+  }
+
   .main__text-button {
-    margin-top: 15px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    background-color: #18d860;
-    width: max-content;
-    font-family: 'Gotham';
-    font-size: 1.125rem;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: 0.4s ease;
+    font-size: 1rem;
   }
-  
-  .main__text-button-icon{
-    font-size: 2rem;
+
+  .main__text-button-icon {
+    font-size: 1.75rem;
   }
-  
+
   .main__text-button:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.1);
+    transform: scale(1.075);
   }
-  
-  .main__img img {
-    width: 250px;
-    transition: transform 0.4s ease;
+
+  .info h2 {
+    text-align: center;
+    font-size: 1.5rem;
   }
-  
-  .main__img img:hover {
-    transform: scale(1.1);
-  }
-  
-  
-  
-  
-  /* info */
-  
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  .info h2{
-    margin-top: 30px;
-    font-size: 1.875rem;
-  }
-  
-  .info__cards{
-    display: flex;
-    gap: 45px;
-  }
-  
-  /* FAQs */
-  
-  .faqs {
-    margin: 80px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+
   .faqs__title {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
-  
-  /* ------------------------ MEDIA QUERIES ------------------------*/
-  
-  /* TABLETS (Horizontal 1024px - 1279px) */
-  
-  @media (max-width: 1279px) {
-  
-    .main__text-subtitle {
-      width: 100%;
-    }
-  }
-  
-  /* TABLETS (Vertical 768px - 1023px) */
-  
-  @media (max-width: 1023px) {
-  
-    .main {
-      padding: 0px 4vw;
-    }
-  
-    .main__text-title {
-      white-space: normal;
-    }
-  
-    .info__cards{
-      flex-direction: column;
-    }
-  }
-  
-  /* TELEFONOS grandes (481px - 767px)*/
-  
-  @media (max-width: 767px) {
-  
-    .main__img{
-      display: none;
-    }
-  
-    .main__text{
-      align-items: center;
-    }
-  
-    .main__text-title, .main__text-subtitle{
-      text-align: center;
-    }
-  
-  }
-  
-  /* TELEFONOS medianos (418px - 480px)*/
-  /* Se adapta bien a los estilos anteriores */
-  
-  /* TELEFONOS pequeños (hasta 417px)*/
-  @media (max-width: 417px) {
-    .main__text-title{
-      font-size: 2.5rem;
-    }
-  
-    .main__text-subtitle{
-      font-size: 0.75rem;
-    }
-  
-    .main__text-button{
-      font-size: 1rem;
-    }
-  
-    .main__text-button-icon{
-      font-size: 1.75rem;
-    }
-  
-    .main__text-button:hover {
-      transform: scale(1.075);
-    }
-  
-    .info h2 {
-      text-align: center;
-      font-size: 1.5rem;
-    }
-  
-    .faqs__title{
-      font-size: 1.5rem;
-    }
-  }
-  
+}
