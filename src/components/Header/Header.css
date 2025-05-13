@@ -86,6 +86,10 @@
     margin-top: 6px;
   }
 
+  .header__nav-item a{
+    font-size: 0.75rem;
+  }
+
   .show__menu {
     display: block;
   }
