@@ -1,4 +1,7 @@
-# 🎧 SpotInsights - Frontend
+
+<div align="center">
+  <img src="./public/Logo-spotinsights.png" alt="Logo" height="150">
+</div>
 
 ## 📚 Índice
 1. [🎧 ¿Qué es SpotInsights?](#-qué-es-spotinsights)
