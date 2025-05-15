@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="./public/Logo-spotinsights.png" alt="Logo" height="150">
+  <img src="./public/Logo-spotinsights.png" alt="Logo SpotInsights" height="150">
 </div>
 
 ## 📚 Índice
