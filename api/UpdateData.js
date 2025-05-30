@@ -1,8 +1,5 @@
 import axios from "axios"
 
-export const config = {
-  schedule: '0 0 19 */5 * *',
-};
 
 export default async function handler(_, res) {
   const api_url = import.meta.env.VITE_API_URL_SPOTINSIGHTS;
