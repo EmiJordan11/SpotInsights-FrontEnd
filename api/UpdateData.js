@@ -6,19 +6,10 @@ export default async function handler(_, res) {
 
   console.log('Actualizando datos desde el Front...')
 
-  try {
-    const response = await axios.post(`${api_url}/scheduler`, null);
+  axios.post(`${api_url}/scheduler`, null)
+    .then(() => console.log("Petición enviada"))
+    .catch((err) => console.error("Error:", err));
 
-    if (response.status === 204) {
-      console.log("Datos actualizados correctamente");
-      res.status(200).send("Actualización exitosa");
-    } else {
-      console.log("Error al tratar de actualizar los datos");
-      res.status(500).send("Fallo en la actualización");
-    }
-  } catch (err) {
-    console.error("Error pinging backend:", err);
-    res.status(500).send("Error en la solicitud al backend");
-  }
+  res.status(202).send("Petición enviada, procesando en segundo plano");
 }
 
