@@ -2,7 +2,7 @@ import axios from "axios"
 
 
 export default async function handler(_, res) {
-  const api_url = import.meta.env.VITE_API_URL_SPOTINSIGHTS;
+  const api_url = process.env.VITE_API_URL_SPOTINSIGHTS;
 
   console.log('Actualizando datos desde el Front...')
 
